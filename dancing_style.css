@@ -101,12 +101,13 @@ h1 {
 	position: relative; 
 	top: 100px; 
 	left: 40px; 
+    float: left;
 } 
 
 .right_eye { 
 	position: relative; 
 	top: 100px; 
-	left: 120px; 
+	left: 120px;
 }
 
 
