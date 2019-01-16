@@ -36,7 +36,7 @@ h1 {
 	width: 300px; 
 	height: 150px;
 	display: flex; 
-    margin: auto;
+    margin: auto; 
 } 
 
 .left_arm, .right_arm { 
@@ -63,7 +63,7 @@ h1 {
 	width: 200px; 
 	height: 200px;
 	/* This is another useful property. Hmm what do you think it does?*/
-	margin: 0 auto;
+	margin: 20px auto;
 
 } 
 
@@ -74,7 +74,8 @@ h1 {
 } 
 
 .left_leg { 
-	margin-left: 45px; 
+	margin-left: 45px;
+    float: left;
 } 
 
 .left_leg:hover {
@@ -86,7 +87,8 @@ h1 {
 }
 
 .right_leg { 
-	margin-left: 30px; 
+	margin-right: 45px;
+    float: right;
 }
 
 .left_eye, .right_eye { 
