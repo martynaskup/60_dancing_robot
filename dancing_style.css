@@ -62,7 +62,33 @@ h1 {
 }
 
 .left_arm {
+	position: relative;
 	margin-right: 10px;
+	animation: transformation_left 2s infinite;
+	transform-origin: top center;
+}
+@keyframes transformation_left {
+	0%	{
+		transform: rotate(0deg);
+	}
+	20% {
+		transform: rotate(180deg);
+	}
+	30% {
+		transform: rotate(130deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	70% {
+		transform: rotate(130deg);
+	}
+	80% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }
 
 .right_arm {
