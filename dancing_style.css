@@ -12,7 +12,7 @@ h1 {
 .right_arm,
 .left_leg,
 .right_leg {
-	 background-color: #5f93e8;
+	background-color: #5f93e8;
 }
 .head_upper_body {
   animation: rotate 1s infinite;
@@ -45,29 +45,35 @@ h1 {
 
 .head:hover {
 	width: 300px;
-    transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .upper_body {
 	width: 300px;
 	height: 150px;
 	display: flex;
-    margin: auto;
+  margin: auto;
 }
 
 .left_arm, .right_arm {
 	width: 40px;
 	height: 125px;
 	border-radius: 100px;
+	transform-origin: 50% 16%;
+	animation: transformation_arms 2s infinite;
+	box-shadow: -1px 4px 4px -2px #444444;
 }
 
 .left_arm {
 	position: relative;
 	margin-right: 10px;
-	animation: transformation_left 2s infinite;
-	transform-origin: top center;
 }
-@keyframes transformation_left {
+
+.right_arm {
+	margin-left: 10px;
+}
+
+@keyframes transformation_arms {
 	0%	{
 		transform: rotate(0deg);
 	}
@@ -89,10 +95,6 @@ h1 {
 	100% {
 		transform: rotate(0deg);
 	}
-}
-
-.right_arm {
-	margin-left: 10px;
 }
 
 .torso {
@@ -117,27 +119,27 @@ h1 {
 
 .left_leg {
 	margin-left: 45px;
-    float: left;
+  float: left;
 }
 
 .left_leg:hover {
 	-webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
 }
 
 .right_leg {
 	margin-right: 45px;
-    float: right;
+  float: right;
 }
 .right_leg:hover {
 	-webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    transform: rotate(-20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(-20deg);
 }
 
 .left_eye, .right_eye {
@@ -154,7 +156,7 @@ h1 {
 	position: relative;
 	top: 100px;
 	left: 40px;
-    float: left;
+  float: left;
 }
 
 .right_eye {
