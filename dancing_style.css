@@ -1,12 +1,9 @@
 body {
-	background: linear-gradient(to right, red, yellow);
+  background: linear-gradient(to right, red, yellow);
 }
 h1 {
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-}
-
-.robots {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .head,
@@ -15,7 +12,7 @@ h1 {
 .right_arm,
 .left_leg,
 .right_leg {
-	background-color: #5f93e8;
+  background-color: #5f93e8;
 }
 .head_upper_body {
   animation: rotate 1s infinite;
@@ -35,98 +32,95 @@ h1 {
   }
 }
 .head {
-	width: 200px;
-	margin: 0 auto;
-	height: 150px;
-	border-radius: 200px 200px 0 0;
-	margin-bottom: 10px;
-}
-
-.eyes {
-
+  width: 200px;
+  margin: 0 auto;
+  height: 150px;
+  border-radius: 200px 200px 0 0;
+  margin-bottom: 10px;
 }
 
 .head:hover {
-	width: 300px;
+  width: 300px;
   transition: 1s ease-in-out;
 }
 
 .upper_body {
-	width: 300px;
-	height: 150px;
-	display: flex;
+  width: 300px;
+  height: 150px;
+  display: flex;
   margin: auto;
 }
 
-.left_arm, .right_arm {
-	width: 40px;
-	height: 125px;
-	border-radius: 100px;
-	transform-origin: 50% 16%;
-	animation: transformation_arms 2s infinite;
-	box-shadow: -1px 4px 4px -2px #444444;
+.left_arm,
+.right_arm {
+  width: 40px;
+  height: 125px;
+  border-radius: 100px;
+  transform-origin: 50% 16%;
+  animation: transformation_arms 2s infinite;
+  box-shadow: -1px 4px 4px -2px #444444;
 }
 
 .left_arm {
-	position: relative;
-	margin-right: 10px;
+  position: relative;
+  margin-right: 10px;
 }
 
 .right_arm {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 @keyframes transformation_arms {
-	0%	{
-		transform: rotate(0deg);
-	}
-	20% {
-		transform: rotate(180deg);
-	}
-	30% {
-		transform: rotate(130deg);
-	}
-	50% {
-		transform: rotate(180deg);
-	}
-	70% {
-		transform: rotate(130deg);
-	}
-	80% {
-		transform: rotate(180deg);
-	}
-	100% {
-		transform: rotate(0deg);
-	}
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(180deg);
+  }
+  30% {
+    transform: rotate(130deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(130deg);
+  }
+  80% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .torso {
-	width: 200px;
-	height: 200px;
-	border-radius: 0 0 50px 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 0 0 50px 50px;
 }
 
 .lower_body {
-	width: 200px;
-	height: 200px;
-	/* This is another useful property. Hmm what do you think it does?*/
-	margin: 20px auto;
-
+  width: 200px;
+  height: 200px;
+  /* This is another useful property. Hmm what do you think it does?*/
+  margin: 20px auto;
 }
 
-.left_leg, .right_leg {
-	width: 40px;
-	height: 120px;
-	border-radius: 0 0 100px 100px;
+.left_leg,
+.right_leg {
+  width: 40px;
+  height: 120px;
+  border-radius: 0 0 100px 100px;
 }
 
 .left_leg {
-	margin-left: 45px;
+  margin-left: 45px;
   float: left;
 }
 
 .left_leg:hover {
-	-webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -o-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
@@ -134,49 +128,51 @@ h1 {
 }
 
 .right_leg {
-	margin-right: 45px;
+  margin-right: 45px;
   float: right;
 }
 .right_leg:hover {
-	-webkit-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -o-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   transform: rotate(-20deg);
 }
 
-.left_eye, .right_eye {
-	width: 20px;
-/*	height: 20px; */
-	border-radius: 15px;
-	background-color: white;
-	animation: closingEyes 6s infinite;
+.left_eye,
+.right_eye {
+  width: 20px;
+  /*	height: 20px; */
+  border-radius: 15px;
+  background-color: white;
+  animation: closingEyes 6s infinite;
 }
 
 .left_eye {
-	/* These properties are new and you haven't encountered
+  /* These properties are new and you haven't encountered
 	in this course. Check out CSS Tricks to see what it does! */
-	position: relative;
-	top: 100px;
-	left: 40px;
+  position: relative;
+  top: 100px;
+  left: 40px;
   float: left;
 }
 
 .right_eye {
-	position: relative;
-	top: 100px;
-	left: 120px;
+  position: relative;
+  top: 100px;
+  left: 120px;
 }
 
-@keyframes closingEyes  {
-  0%  {
+@keyframes closingEyes {
+  0% {
     height: 20px;
   }
   20% {
     background-color: white;
     border: 4px solid white;
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px;  }
+    border-top-right-radius: 15px;
+  }
   50% {
     background-color: #5f93e8;
     border: 4px solid white;
